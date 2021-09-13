@@ -86,3 +86,32 @@ stat_col.image(files['SHAP_BAR'])
 
 stat_col.header('Residual Plot')
 stat_col.image(files['ResidualsPlot'])
+
+footer="""<style>
+a:link , a:visited{
+color: #bd93f9;
+background-color: transparent;
+text-decoration: underline;
+}
+
+a:hover,  a:active {
+color: #8be9fd;
+background-color: transparent;
+text-decoration: underline;
+}
+
+.footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: #0E1117;
+color: #bd93f9;
+text-align: center;
+}
+</style>
+<div class="footer">
+<p>Developed by Douglas Chen<a style='display: block; text-align: center;' href="https://github.com/MonkeyDoug/Housing-Regression" target="_blank">MonkeyDoug</a></p>
+</div>
+"""
+st.markdown(footer,unsafe_allow_html=True)
